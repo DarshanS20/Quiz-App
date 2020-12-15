@@ -65,7 +65,7 @@ public class Login extends JFrame {
 		txtUsernamr.setColumns(10);
 		
 		JButton btnNewButton = new JButton("Login");
-	//	btnNewButton.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\login.png"));
+
 		Image img13 = new ImageIcon(this.getClass().getResource("/login.png")).getImage();
 		 btnNewButton.setIcon(new ImageIcon(img13));
 		btnNewButton.setBackground(new Color(255, 228, 196));
@@ -92,14 +92,10 @@ public class Login extends JFrame {
 		            {     
 		            	
 		            	new QuizStart(username).setVisible(true);
-		            	//QuizStart q1 = new QuizStart(username);
-		            	//q1.setVisible(true);
+		            	
 		                dispose();
 		            }
-		           // else
-		          //  {
-		           //      JOptionPane.showMessageDialog(null, "Wrong Username/Password Please Enter Again"); 
-		          //  }
+		          
 		            }
 		        }
 		        catch(Exception a)
@@ -112,7 +108,7 @@ public class Login extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnRegister = new JButton("Register");
-		//btnRegister.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\login.png"));
+		
 		Image img12 = new ImageIcon(this.getClass().getResource("/login.png")).getImage();
 		btnRegister.setIcon(new ImageIcon(img12));
 		btnRegister.setFont(new Font("Tahoma", Font.PLAIN, 26));
@@ -139,7 +135,7 @@ public class Login extends JFrame {
 		contentPane.add(lblUpassword);
 		
 		JButton btnNewButton_1 = new JButton("Admin ");
-		//btnNewButton_1.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\admin.png"));
+		
 		Image img11 = new ImageIcon(this.getClass().getResource("/admin.png")).getImage();
 		btnNewButton_1.setIcon(new ImageIcon(img11));
 		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 26));
@@ -158,14 +154,14 @@ public class Login extends JFrame {
 		contentPane.add(passwordField);
 		
 		JLabel lblNewLabel = new JLabel("");
-		//lblNewLabel.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\loginlabel.png"));
+		
 		Image img = new ImageIcon(this.getClass().getResource("/loginlabel.png")).getImage();
 		lblNewLabel.setIcon(new ImageIcon(img));
 		lblNewLabel.setBounds(415, 33, 498, 140);
 		contentPane.add(lblNewLabel);
 		
 		JLabel label = new JLabel("");
-		//label.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\username.png"));
+		
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		Image img1 = new ImageIcon(this.getClass().getResource("/username.png")).getImage();
 		label.setIcon(new ImageIcon(img1));
@@ -174,7 +170,7 @@ public class Login extends JFrame {
 		contentPane.add(label);
 		
 		JLabel label_1 = new JLabel("");
-	//	label_1.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\padlock.png"));
+	
 		Image img2 = new ImageIcon(this.getClass().getResource("/padlock.png")).getImage();
 		label_1.setIcon(new ImageIcon(img2));
 		label_1.setHorizontalAlignment(SwingConstants.CENTER);
@@ -182,5 +178,5 @@ public class Login extends JFrame {
 		label_1.setBounds(706, 292, 244, 44);
 		contentPane.add(label_1);
 		}
-    //}
+    
 }
