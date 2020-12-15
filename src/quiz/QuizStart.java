@@ -36,9 +36,7 @@ public class QuizStart extends JFrame {
 	private JPanel contentPane;
 	private  ButtonGroup buttonGroup = new ButtonGroup();
 	
-	 //Stack<Integer> qhist = new <Integer>Stack();
-	// Stack<Integer> qhistdupl = (Stack)qhist.clone();
-	// Iterator value = qhist.iterator(); 
+	
 	/**
 	 * Launch the application.
 	 */
@@ -62,9 +60,7 @@ public class QuizStart extends JFrame {
 	 * @param username2 
 	 * @param username 
 	 */
-	//public QuizStart() {
-		//initComponents();
-	//}
+	
 	public QuizStart(String username) {
 			//initComponents();
 			usern=username;
@@ -131,7 +127,7 @@ public class QuizStart extends JFrame {
 		
 		
 		JButton btnSubmit = new JButton("Submit");
-		//btnSubmit.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\enter.png"));
+		
 		Image img = new ImageIcon(this.getClass().getResource("/enter.png")).getImage();
 		btnSubmit.setIcon(new ImageIcon(img));
 		btnSubmit.addActionListener(new ActionListener() {
@@ -282,13 +278,6 @@ public class QuizStart extends JFrame {
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				/*if(db_ans.equals(studentAnswer))
-				{
-					
-					tmarks=tmarks+db_marks;
-					System.out.println("correct-second");
-					
-				}*/
 				if(radioButton.isSelected())
 				{
 					studentAnswer=radioButton.getText();
@@ -384,14 +373,7 @@ public class QuizStart extends JFrame {
 						radioButton_1.setSelected(false);
 						radioButton_2.setSelected(false);
 					}
-					/*if(db_ans.equals(studentAnswer))
-					{
-						
-						tmarks=tmarks+db_marks;
-						System.out.println("correct-second");
-						System.out.println(tmarks);
-					}
-					*/
+					
 					count++;
 					//System.out.println(count);
 					//System.out.println("two");
@@ -423,8 +405,7 @@ public class QuizStart extends JFrame {
 		timer.addActionListener(new ActionListener() {
 			//@Override
 			public void actionPerformed(ActionEvent e) {
-			//	SimpleDateFormat sdf= new SimpleDateFormat("mm:ss");
-				//label.setText(sdf.format(new java.util.Date()));
+			
 				label.setText(String.valueOf(min));
 				label_1.setText(String.valueOf(sec));	
 				if(sec == 60)
