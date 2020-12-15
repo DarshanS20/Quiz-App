@@ -81,7 +81,7 @@ public class AdminLogin extends JFrame {
 		contentPane.setLayout(gbl_contentPane);
 		
 		JLabel lblAdmin = new JLabel("");
-		//lblAdmin.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\admin large.png"));
+		
 		Image img = new ImageIcon(this.getClass().getResource("/admin large.png")).getImage();
 		lblAdmin.setIcon(new ImageIcon(img));
 		lblAdmin.setHorizontalAlignment(SwingConstants.CENTER);
