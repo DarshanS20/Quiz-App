@@ -147,7 +147,7 @@ public class QuestionEntry extends JFrame {
 		
 		JButton btnSubmit = new JButton("Submit");
 		btnSubmit.setBounds(542, 574, 219, 137);
-		//btnSubmit.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\enter.png"));
+		
 		Image img = new ImageIcon(this.getClass().getResource("/enter.png")).getImage();
 		btnSubmit.setIcon(new ImageIcon(img1));
 		btnSubmit.addActionListener(new ActionListener() {
