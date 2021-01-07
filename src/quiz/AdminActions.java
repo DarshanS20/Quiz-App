@@ -72,7 +72,7 @@ public class AdminActions extends JFrame {
 		
 		JButton btnViewScores = new JButton("View Scores");
 		btnViewScores.setBounds(111, 371, 299, 59);
-		//btnViewScores.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\view.png"));
+		
 		Image img = new ImageIcon(this.getClass().getResource("/view.png")).getImage();
 		btnViewScores.setIcon(new ImageIcon(img));
 		btnViewScores.addActionListener(new ActionListener() {
@@ -84,7 +84,7 @@ public class AdminActions extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setBounds(194, 98, 128, 128);
-		//lblNewLabel.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\admin (2).png"));
+		
 		Image img1 = new ImageIcon(this.getClass().getResource("/admin (2).png")).getImage();
 		contentPane.setLayout(null);
 		lblNewLabel.setIcon(new ImageIcon(img1));
@@ -98,7 +98,7 @@ public class AdminActions extends JFrame {
 		
 		JButton btnNewButton = new JButton("Question Entry");
 		btnNewButton.setBounds(111, 289, 294, 59);
-		//btnNewButton.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\enter.png"));
+		
 		Image img12 = new ImageIcon(this.getClass().getResource("/enter.png")).getImage();
 		btnNewButton.setIcon(new ImageIcon(img12));
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 17));
