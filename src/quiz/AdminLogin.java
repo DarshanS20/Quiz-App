@@ -76,7 +76,7 @@ public class AdminLogin extends JFrame {
 		
 		JLabel lblAdmin = new JLabel("");
 		lblAdmin.setBounds(23, 46, 534, 167);
-		//lblAdmin.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\admin large.png"));
+		
 		Image img = new ImageIcon(this.getClass().getResource("/admin large.png")).getImage();
 		contentPane.setLayout(null);
 		lblAdmin.setIcon(new ImageIcon(img));
@@ -110,7 +110,6 @@ public class AdminLogin extends JFrame {
 		
 		JButton button = new JButton("Login");
 		button.setBounds(189, 479, 194, 41);
-		button.setIcon(new ImageIcon("G:\\ENGINEERING\\SECOND YEAR ENGG\\OOPS in Java\\Programs\\QuizApplication\\images\\login.png"));
 		button.setIcon(new ImageIcon(img1));
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
